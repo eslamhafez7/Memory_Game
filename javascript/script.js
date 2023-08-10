@@ -9,7 +9,7 @@ function updatename(newName) {
     let nameSpan = document.querySelector(".name span");
     nameSpan.textContent = newName;
     let speech = new SpeechSynthesisUtterance(`Hello ${newName}`);
-    speech.rate = 1.5;
+    speech.rate = 1;
     window.speechSynthesis.speak(speech);
 }
 
