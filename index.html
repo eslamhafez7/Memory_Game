@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game | Eslam Hafez</title>
+    <link rel="shortcut icon" href="src/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/sweetalert2.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="overlay"></div>
+    <header class="header">
+        <div class="name box">Hello: <span> </span></div>
+        <div class="correct-attempts box">Correct Attempts: <span>0</span></div>
+        <div class="timeout box">Timeout: <span></span></div>
+        <div class="wrong-attempts box">Wrong Tries: <span>0</span></div>
+    </header>
+    <section class="game-container">
+        <div class="game-box" data-technology="angular">
+            <div class="front face"></div>
+            <div class="back face">
+                <img src="src/angular.png" alt="angular">
+            </div>
+        </div>
+        <div class="game-box" data-technology="angular">
+            <div class="front face"></div>
+            <div class="back face">
+                <img src="src/angular.png" alt="angular">
+            </div>
+        </div>
+        <div class="game-box" data-technology="bootstrap">
+            <div class="front face"></div>
+            <div class="back face">
+                <img src="src/bootstrap.jpg" alt="bootstrap">
+            </div>
+        </div>
+        <div class="game-box" data-technology="bootstrap">
+            <div class="front face"></div>
+            <div class="back face">
+                <img src="src/bootstrap.jpg" alt="bootstrap">
+            </div>
+        </div>
+        <div class="game-box" data-technology="cpp">
+            <div class="front face"></div>
+            <div class="back face">
+                <img src="src/cpp.png" alt="cpp">
+            </div>
+        </div>
+        <div class="game-box" data-technology="cpp">
+            <div class="front face"></div>
+            <div class="back face">
+                <img src="src/cpp.png" alt="cpp">
+            </div>
+        </div>
+        <div class="game-box" data-technology="css">
+            <div class="front face"></div>
+            <div class="back face">
+                <img src="src/css.png" alt="css">
+            </div>
+        </div>
+        <div class="game-box" data-technology="css">
+            <div class="front face"></div>
+            <div class="back face">
+                <img src="src/css.png" alt="css">
+            </div>
+        </div>
+        <div class="game-box" data-technology="html">
+            <div class="front face"></div>
+            <div class="back face">
+                <img src="src/html.png" alt="html">
+            </div>
+        </div>
+        <div class="game-box" data-technology="html">
+            <div class="front face"></div>
+            <div class="back face">
+                <img src="src/html.png" alt="html">
+            </div>
+        </div>
+        <div class="game-box" data-technology="javascript">
+            <div class="front face"></div>
+            <div class="back face">
+                <img src="src/javascript.png" alt="javascript">
+            </div>
+        </div>
+        <div class="game-box" data-technology="javascript">
+            <div class="front face"></div>
+            <div class="back face">
+                <img src="src/javascript.png" alt="javascript">
+            </div>
+        </div>
+        <div class="game-box" data-technology="node">
+            <div class="front face"></div>
+            <div class="back face">
+                <img src="src/node.png" alt="node">
+            </div>
+        </div>
+        <div class="game-box" data-technology="node">
+            <div class="front face"></div>
+            <div class="back face">
+                <img src="src/node.png" alt="node">
+            </div>
+        </div>
+        <div class="game-box" data-technology="php">
+            <div class="front face"></div>
+            <div class="back face">
+                <img src="src/php.png" alt="php">
+            </div>
+        </div>
+        <div class="game-box" data-technology="php">
+            <div class="front face"></div>
+            <div class="back face">
+                <img src="src/php.png" alt="php">
+            </div>
+        </div>
+        <div class="game-box" data-technology="pugjs">
+            <div class="front face"></div>
+            <div class="back face">
+                <img src="src/pugjs.png" alt="pugjs">
+            </div>
+        </div>
+        <div class="game-box" data-technology="pugjs">
+            <div class="front face"></div>
+            <div class="back face">
+                <img src="src/pugjs.png" alt="pugjs">
+            </div>
+        </div>
+        <div class="game-box" data-technology="python">
+            <div class="front face"></div>
+            <div class="back face">
+                <img src="src/python.jpg" alt="python">
+            </div>
+        </div>
+        <div class="game-box" data-technology="python">
+            <div class="front face"></div>
+            <div class="back face">
+                <img src="src/python.jpg" alt="python">
+            </div>
+        </div>
+        <div class="game-box" data-technology="react">
+            <div class="front face"></div>
+            <div class="back face">
+                <img src="src/react.png" alt="react">
+            </div>
+        </div>
+        <div class="game-box" data-technology="react">
+            <div class="front face"></div>
+            <div class="back face">
+                <img src="src/react.png" alt="react">
+            </div>
+        </div>
+        <div class="game-box" data-technology="tailwind">
+            <div class="front face"></div>
+            <div class="back face">
+                <img src="src/tailwind.png" alt="tailwind">
+            </div>
+        </div>
+        <div class="game-box" data-technology="tailwind">
+            <div class="front face"></div>
+            <div class="back face">
+                <img src="src/tailwind.png" alt="tailwind">
+            </div>
+        </div>
+        <div class="game-box" data-technology="threejs">
+            <div class="front face"></div>
+            <div class="back face">
+                <img src="src/threejs.jpg" alt="threejs">
+            </div>
+        </div>
+        <div class="game-box" data-technology="threejs">
+            <div class="front face"></div>
+            <div class="back face">
+                <img src="src/threejs.jpg" alt="threejs">
+            </div>
+        </div>
+        <div class="game-box" data-technology="vue">
+            <div class="front face"></div>
+            <div class="back face">
+                <img src="src/vue.png" alt="vue">
+            </div>
+        </div>
+        <div class="game-box" data-technology="vue">
+            <div class="front face"></div>
+            <div class="back face">
+                <img src="src/vue.png" alt="vue">
+            </div>
+        </div>
+    </section>
+    <div class="copyright"><p>&copy; Eslam Hafez | <span></span></p></div>
+    <audio id="success" src="audios/right-click.mp3" preload="auto"></audio>
+    <audio id="fail" src="audios/wrong-click.mp3" preload="auto"></audio>
+    <audio id="lose" src="audios/wah-wah-sad-trombone-6347.mp3" preload="auto"></audio>
+    <audio id="win" src="audios/yay-6120.mp3" preload="auto"></audio>
+    <script src="javascript/sweetalert2.all.min.js"></script>
+    <script src="javascript/script.js"></script>
+</body>
+</html>
