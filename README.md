@@ -28,6 +28,7 @@ This is a memory game that can be played on desktop and tablets. The objective o
 - CSS
 - JavaScript
 - SweetAlert
+- anime.js
 
 ## Compatibility
 

@@ -19,6 +19,20 @@ body {
 img {
     max-width: 100%;
 }
+#dark_mode {
+    width: 50px;
+    cursor: pointer;
+}
+.dark .box {
+    background-color: #000;
+    color: #fff;
+}
+.dark .face {
+    background-color: #fff;
+}
+.game-box .front::after {
+    color: #000;
+}
 .overlay {
     position: fixed;
     width: 100%;
@@ -45,6 +59,7 @@ img {
     border-radius: 10px;
     padding: 10px 15px;
     font-size: 15px;
+    transition: 0.3s;
 }
 .box span {
     color: #2196f3;
@@ -68,6 +83,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: 0.3s;
 }
 .game-box .front {
     background-color: #333;
@@ -111,12 +127,21 @@ img {
     color: #333333a8;
 }
 @media screen and (max-width: 768px) {
+    .header {
+        flex-wrap: wrap;
+    }
     .game-container {
         grid-template-columns: repeat(3, 1fr);
     }
 }
 @media screen and (max-width: 540px) {
+    .header {
+        flex-wrap: wrap;
+    }
     .game-container {
         grid-template-columns: repeat(2, 1fr);
+    }
+    .box {
+        margin-bottom: 10px;
     }
 }

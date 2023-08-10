@@ -15,6 +15,11 @@
         <div class="correct-attempts box">Correct Attempts: <span>0</span></div>
         <div class="timeout box">Timeout: <span></span></div>
         <div class="wrong-attempts box">Wrong Tries: <span>0</span></div>
+        <div class="dark-mode">
+            <svg id="dark_mode" width="55" height="55" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="sun" d="M55 27.5C55 42.6878 42.6878 55 27.5 55C12.3122 55 0 42.6878 0 27.5C0 12.3122 12.3122 0 27.5 0C42.6878 0 55 12.3122 55 27.5Z" fill="#FB9E13"/>
+            </svg>
+        </div>
     </header>
     <section class="game-container">
         <div class="game-box" data-technology="angular">
@@ -191,6 +196,7 @@
     <audio id="fail" src="audios/wrong-click.mp3" preload="auto"></audio>
     <audio id="lose" src="audios/wah-wah-sad-trombone-6347.mp3" preload="auto"></audio>
     <audio id="win" src="audios/yay-6120.mp3" preload="auto"></audio>
+    <script src="javascript/anime.min.js"></script>
     <script src="javascript/sweetalert2.all.min.js"></script>
     <script src="javascript/script.js"></script>
 </body>
