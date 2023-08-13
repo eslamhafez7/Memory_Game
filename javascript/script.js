@@ -173,6 +173,7 @@ function winGame() {
         }
     });
     document.getElementById("win").play();
+    clearInterval(timeInterval);
 };
 
 function getData() {
